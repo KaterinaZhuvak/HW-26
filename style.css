@@ -1,0 +1,65 @@
+html {
+  position: relative;
+}
+.menu-here {
+  text-transform: uppercase;
+  text-decoration: none;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  color: white;
+  transform: rotate(-90deg);
+  white-space: nowrap;
+  transition: 0.5s;
+  margin: 0;
+  font-size: 30px;
+  left: -60px;
+}
+.menu {
+  position: fixed;
+  left: 0;
+  top: 0;
+  background: grey;
+  width: 50px;
+  height: 100vh;
+  transition: 0.5s;
+}
+.menu:hover {
+  width: 370px;
+}
+.list {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  display: none;
+}
+.menu:hover .list {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.menu:hover .menu-here {
+  display: none;
+}
+.list a::before {
+  content: "";
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  background: orange;
+  margin-right: 10px;
+  transform: rotate(45deg);
+}
+.menu-list {
+  display: flex;
+  flex-direction: column;
+  list-style-type: none;
+  gap: 10px;
+}
+.list-item a {
+  text-decoration: none;
+  color: #ffff;
+}
+.list-item a:hover {
+  color: orange;
+}
